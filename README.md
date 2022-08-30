@@ -20,10 +20,8 @@ including simple file/data processing.
 
 REQUIRED PARAMETERS:    You must have a folder in the same directory
                         name 'data' containing a file named 'data.csv'
-                        it can be found here under Homework1:
-                        https://bridgettebxp13.github.io/CS-4395.001---Human-Language-Technologies/
-                        or here at this github in Homework1:
-                        https://github.com/BridgetteBXP13/CS-4395.001---Human-Language-Technologies/
+                        it can be found [here](https://bridgettebxp13.github.io/CS-4395.001---Human-Language-Technologies/) under Homework1, or [here](https://github.com/BridgetteBXP13/CS-4395.001---Human-Language-Technologies/) at this github in Homework1.
+                        
 Without the directory/file above the program will simply give you an error message telling you that
 you are missing the parameters!
 
