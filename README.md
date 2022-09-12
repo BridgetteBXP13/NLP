@@ -40,6 +40,9 @@ It gives the User opportunities to fix errors in employee IDs and Phone Numbers 
 
 Here is the [code](helloworld.py) and simple [documentation](helloworld.txt).
 
+## Assignment 2: Exploring NLTK
+[Here](Homework2/Exploring_NLTK.ipynb) is a notebook guiding how I explored the Python 3 NLTK library, there is also a [pdf](Homework2/Exploring_NLTK.pdf). I used text1 of the book library (Moby Dick by Herman Melville 1851), to print tokens, concordance, and compare NLTK count and list count modules. I also used some raw text of my own choosing to tokenize by words and sentences, as well as stem and lematize the text to compare results. This helped me familiarize with popular NLTK modules and how to utilize them for data processing.
+
 ## Hello World Program
 
 This program simply says "Hello World" using Python 3. It was simply made to go here during
