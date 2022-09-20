@@ -1,6 +1,7 @@
 # Build site settings
-title: CS 4395.001 Human Language Technologies
-description: This is a github to store my Human Language Technology projects from my CS 4395.001 class.
 remote_theme: pages-themes/architect@v0.2.0
 plugins: jekyll-remote-theme
 gem "github-pages", group: :jekyll_plugins
+title: CS 4395.001 Human Language Technologies
+description: This is a github to store my Human Language Technology projects from my CS 4395.001 class.
+
