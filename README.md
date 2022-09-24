@@ -4,7 +4,7 @@
 
 ## Assignment 1: Text Processing with Python
 
-[Here](/Homework1/Homework1_bmb180001.py) is the code and the [data](/Homework1/data/data.csv) (required for input).
+[Here](/Assignment1/create_emp_dict.py) is the code and the [data](/Assignment1/data/data.csv) (required for input).
 
 This Program takes one input file data.csv in a given data folder. It then processes the data and
 displays it in an organized employee list in the terminal, and also saves it as a dictionary in a
@@ -13,12 +13,12 @@ in a /data directory as shown below and make sure it is set as a parameter in yo
 sure your data.csv file is in the appropriate format as shown below, from there you can run the 
 program with the given inputs, add your own, and give the program input as it requests. Enjoy!
 
-Created for Homework 1 of 4395.001 Human Language Technologies in order to familiarize myself with python,
+Created for Assignment 1 of 4395.001 Human Language Technologies in order to familiarize myself with python,
 including simple file/data processing.
 
 REQUIRED PARAMETERS:    You must have a folder in the same directory
                         name 'data' containing a file named 'data.csv'
-                        it can be found [here](https://bridgettebxp13.github.io/CS-4395.001---Human-Language-Technologies/) under Homework1, or [here](https://github.com/BridgetteBXP13/CS-4395.001---Human-Language-Technologies/) at this github in Homework1.
+                        it can be found [here](https://bridgettebxp13.github.io/CS-4395.001---Human-Language-Technologies/) under Assignment1, or [here](https://github.com/BridgetteBXP13/CS-4395.001---Human-Language-Technologies/) at this github in Assignment1.
                         
 Without the directory/file above the program will simply give you an error message telling you that
 you are missing the parameters!
@@ -38,11 +38,8 @@ Some of the benefits of using Python for text processing is the simplicity of no
 Here is the [code](helloworld.py) and simple [documentation](helloworld.txt).
 
 ## Assignment 2: Exploring NLTK
-[Here](Homework2/Exploring_NLTK.ipynb) is a notebook guiding how I explored the Python 3 NLTK library, there is also a [pdf](Homework2/Exploring_NLTK.pdf). I used text1 of the book library (Moby Dick by Herman Melville 1851), to print tokens, concordance, and compare NLTK count and list count modules. I also used some raw text of my own choosing to tokenize by words and sentences, as well as stem and lematize the text to compare results. This helped me familiarize with popular NLTK modules and how to utilize them for data processing.
+[Here](Assignment2/Exploring_NLTK.ipynb) is a notebook guiding how I explored the Python 3 NLTK library, there is also a [pdf](Assignment2/Exploring_NLTK.pdf). I used text1 of the book library (Moby Dick by Herman Melville 1851), to print tokens, concordance, and compare NLTK count and list count modules. I also used some raw text of my own choosing to tokenize by words and sentences, as well as stem and lematize the text to compare results. This helped me familiarize with popular NLTK modules and how to utilize them for data processing.
 
-## Hello World Program
 
-This program simply says "Hello World" using Python 3. It was simply made to go here during
-the creation of this portfolio as a test program.
-
-Here is the [code](helloworld.py) and simple [documentation](helloworld.txt).
+## Assignment 4: WordNet
+I created a [notebook](Assignment4/WordNet.ipynb) guiding how I utilized the Python 3 NLTK WordNet library and also output it as a [pdf](Assignment4/WordNet.pdf). I made use of synsets for both nouns and verbs, by extracting definitions, examples, lemmas, and traversing hierarchy. I also outputted their hypernyms, hyponyms, meronyms, holonyms, and antonyms. Using Morphy I attempted to make as many possible forms of the word 'walk'. Then I used the path_simularity, Wu-Palmer Simularity, and ran the Lesk algorithm for the words 'turtle' and 'snake'. I found that the Lesk algorithm really struggled with these words and I think it is because they are very context dependent. Then I utilized SentiWordNet to judge emotionally charged words and sentences. By using 'hate', 'love', and 'passionate' I mixed them in the sentences to see the results. Calculating the polarity scores for both each word in the sentence as well as the sum polarity of the sentence using a couple simple functions I wrote. Then I looked at collocation of text4 from NLTK.book and calculated the mutual information, which was high as exspected for the collocation I chose (Indian tribes).

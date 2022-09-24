@@ -1,6 +1,6 @@
 '''
 Welcome to Homework1_bmb180001.py! Created by Bridgette Bryant, NETID: BMB180001
-Created for Homework 1 of 4395.001 Human Language Technologies in order to familiarize myself with python,
+Created for Assignment 1 of 4395.001 Human Language Technologies in order to familiarize myself with python,
 including simple file/data processing.
 
 REQUIRED PARAMETERS:    You must have a folder in the same directory
@@ -8,7 +8,7 @@ REQUIRED PARAMETERS:    You must have a folder in the same directory
                         it can be found here under Homework1:
                         https://bridgettebxp13.github.io/CS-4395.001---Human-Language-Technologies/
 
-                        or here at this github in Homework1:
+                        or here at this github in Assignment:
                         https://github.com/BridgetteBXP13/CS-4395.001---Human-Language-Technologies/
 Without the directory/file above the program will simply give you an error message telling you that
 you are missing the parameters!

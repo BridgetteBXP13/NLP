@@ -1,4 +1,0 @@
-HelloWorld.py Overview
-
-A very simple 1 line print to display "Hello World" as part of a test program.
-Only created to test that Pycharm, Github Desktop, and my GitHub portfolio using sites is correct.
