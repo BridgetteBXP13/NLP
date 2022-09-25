@@ -1,5 +1,5 @@
 '''
-Welcome to Homework1_bmb180001.py! Created by Bridgette Bryant, NETID: BMB180001
+Welcome to create_emp_dict.py! Created by Bridgette Bryant, NETID: BMB180001
 Created for Assignment 1 of 4395.001 Human Language Technologies in order to familiarize myself with python,
 including simple file/data processing.
 
