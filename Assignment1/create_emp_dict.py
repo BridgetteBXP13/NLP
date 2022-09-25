@@ -69,7 +69,7 @@ Main:
 
 import sys      # to get the system parameter (data.csv)
 import os       # used to get the os system for data.csv
-import re       # Used for processing the
+import re       # Used for processing the data
 import pickle   # Used for saving/reading the finished dictionary
 
 
