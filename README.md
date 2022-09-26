@@ -105,6 +105,7 @@ also thank the user for playing.
     game ends and the user will be congratulated as a guessing master. If the user quits by entering a '!' the function
     will print the end sequence and thank them for playing. The end sequence for both is displaying the ending number of
     points, number of guessed words, and the guessed words. The program will then return to main.
+    
 #### main:
     Verifies that the parameter data file anat19.txt is present (using readdatafile). Then it will use the
     processrawdata function to process the given raw text. Then it will calculate/print the lexical diversity of
