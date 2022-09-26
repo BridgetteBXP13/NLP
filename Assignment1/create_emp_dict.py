@@ -1,5 +1,5 @@
 '''
-Welcome to Homework1_bmb180001.py! Created by Bridgette Bryant, NETID: BMB180001
+Welcome to create_emp_dict.py! Created by Bridgette Bryant, NETID: BMB180001
 Created for Assignment 1 of 4395.001 Human Language Technologies in order to familiarize myself with python,
 including simple file/data processing.
 
@@ -69,7 +69,7 @@ Main:
 
 import sys      # to get the system parameter (data.csv)
 import os       # used to get the os system for data.csv
-import re       # Used for processing the
+import re       # Used for processing the data
 import pickle   # Used for saving/reading the finished dictionary
 
 
@@ -82,26 +82,27 @@ class Person:
         self.id = id        # Person's id
         self.phone = phone  # Person's phone number
 
+    # displays the employee's information, such as ID, First name, Middle Initial, Last name, and phone number 
     def display(self):
         print('\nEmployee id:', self.id)  # Prints the employee id
         # prints the firstname, middle initial, and lastname of person
         print('\t' + '\t' + self.first + ' ' + self.mi + ' ' + self.last)
         print('\t' + '\t' + self.phone)  # prints the phone number of person
 
-
+# Opens the parameter data file up from the file directory, works with multiple os systems!
 def readdatafile(filepath):
     with open(os.path.join(os.getcwd(), filepath), 'r') as f:
         text_in = f.read()
     return text_in
 
-
+# gets input from the user and returns it
 def getuserinput(neededInputType, errorMsg):
         print(errorMsg)
         rawInput = input("Please input a valid " + neededInputType + ': ')
         # print("input: " + rawInput)
         return rawInput
 
-
+# removes the 'Last,First,Middle Initial,ID,Office phone' from the data file
 def removeTitles(data):
     data.reverse() # Reverses the data
     # Remove the last 5 items
@@ -110,7 +111,7 @@ def removeTitles(data):
     data.reverse()  # Re-reverse the data (back the correct order)
     return data # Return the data without the titles
 
-
+# clean and verifies that a valid alphabetic name was given and returns it
 def verifyName(name): # Verifies a name is Capital Case and only alpabetical letters
     # Strips the name of any non-alpha characters
     name = re.sub(r'[^a-zA-Z]', '', name)
@@ -118,7 +119,7 @@ def verifyName(name): # Verifies a name is Capital Case and only alpabetical let
     # print(name.capitalize())
     return name.capitalize()
 
-
+# clean and verifies that a valid alphabetic letter was given and returns it
 def verifyMidLetter(mid):
     # Strips the Middle Initial of any non-alpha characters
     mid = re.sub(r'[^a-zA-Z]', '', mid)
@@ -131,7 +132,7 @@ def verifyMidLetter(mid):
     # print(mid[0])
     return mid[0]
 
-
+# cleans and verifies that a valid id in the form XX0000 was given, if given invalid ID it will retrieve a valid ID from the user, then return it
 def verifyID(id):
     # Verifies that the id is of correct length
     if not len(id) == 6:
@@ -157,7 +158,8 @@ def verifyID(id):
                 # Verify that the letters are uppercase and return the id!
                 # print(id.upper())
                 return id.upper()
-
+              
+# clean and verifies that a valid phone number of 10 digits was given, if given invalid phone number it will retreive a valid phone number from the user, and return it
 def verifyPhnNum(num):
     # Strips the phone number of anything but digits
     num = re.sub('\D', '', num)
@@ -174,7 +176,7 @@ def verifyPhnNum(num):
     # if we get here something went terribly wrong!
     # print('00HELP')
 
-
+# processes all the given input data and creates the employee dictionary, then returns created dictionary
 def processData(rawData) :# Removes the titles from the data (in this case it is built around 5 titles)
     # Replace any newlines with a comma for splitting
     rawData = rawData.replace("\n", ',')
@@ -227,7 +229,7 @@ def processData(rawData) :# Removes the titles from the data (in this case it is
     # Return dictionary to main
     return personDict
 
-
+# the main driver
 if __name__ == '__main__':
 
     # Verifying that the system parameter 'data/data.csv' is in place
