@@ -25,6 +25,7 @@ def crawl(starter_url):
                     link_str = link_str[:i]
                 if link_str.startswith('http') and 'google' not in link_str:
                     f.write(link_str + '\n')
+                    crawl(link_str)
 
 if __name__== '__main__':
     starter_url = 'https://www.nationalgeographic.com/animals/reptiles/facts/snakes-1'
@@ -34,6 +35,7 @@ if __name__== '__main__':
 
     que = []
 
+    # Still debugging below
     with open('snake_urls.txt', 'r') as file:
         urls = file.read().splitlines()
     for u in urls:
