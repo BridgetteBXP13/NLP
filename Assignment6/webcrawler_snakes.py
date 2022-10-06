@@ -5,10 +5,10 @@ from bs4 import BeautifulSoup
 import requests
 
 def crawl(count, que, file):
-    print("In crawl")
-    print("count: ", count)
+    #print("In crawl")
+    #print("count: ", count)
     # If we have reached our maximum count, return
-    if count == 10:
+    if count == 30:
         return
     if len(que) == 0:
         return
@@ -29,19 +29,19 @@ def crawl(count, que, file):
             if '&' in link_str:
                 i = link_str.find('&')
                 link_str = link_str[:i]
-            if link_str.startswith('http') and 'google' not in link_str and 'buzzfeed' not in link_str:
+            if link_str.startswith('http') and 'killed' not in link_str and 'google' not in link_str and 'buzzfeed' not in link_str and link_str not in que:
                 file.write(link_str + '\n')
                 que.append(link_str)
                 print("saved: ", link_str)
                 count += 1
                 # If we have reached our maximum count, return
-                if count == 10:
+                if count == 30:
                     return
-                print("count 2: ", count)
+                #print("count 2: ", count)
                 crawl(count, que, file)
-                print("count 3: ", count)
+                #print("count 3: ", count)
                 # If we have reached our maximum count, return
-                if count == 10:
+                if count == 30:
                     return
     return
 
