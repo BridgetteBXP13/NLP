@@ -1,4 +1,3 @@
-# Tera Parish       txp200011
 # Bridgette Bryant  bmb180001
 
 from bs4 import BeautifulSoup
@@ -46,7 +45,7 @@ def crawl(count, que, file):
     return
 
 
-if __name__== '__main__':
+if __name__ == '__main__':
 
     starter_url = 'https://www.nationalgeographic.com/animals/reptiles/facts/snakes-1'
     que = []
