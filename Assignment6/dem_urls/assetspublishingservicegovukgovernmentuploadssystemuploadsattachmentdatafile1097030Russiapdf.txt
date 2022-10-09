@@ -1,0 +1,24 @@
+%PDF-1.4
+1 0 obj
+<<
+/Title (þÿ C O N S O L I D A T E D   L I S T   O F   F I N A N C I A L   S A N C T I O N S   T A R G E T S   I N   T H E   U K)
+/Creator (þÿ w k h t m l t o p d f   0 . 1 2 . 4)
+/Producer (þÿ Q t   4 . 8 . 7)
+/CreationDate (D:20221004095210Z)
+>>
+endobj
+3 0 obj
+<<
+/Type /ExtGState
+/SA true
+/SM 0.02
+/ca 1.0
+/CA 1.0
+/AIS false
+/SMask /None>>
+endobj
+4 0 obj
+[/Pattern /DeviceRGB]
+endobj
+6 0 obj
+<<

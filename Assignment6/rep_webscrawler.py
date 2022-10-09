@@ -14,7 +14,7 @@ def crawl(count, que, file):
     #print("In crawl")
     #print("count: ", count)
     # If we have reached our maximum count, return
-    if count == 7:
+    if count == 50:
         return
     if len(que) == 0:
         return
@@ -42,13 +42,13 @@ def crawl(count, que, file):
                 #print("saved: ", link_str)
                 count += 1
                 # If we have reached our maximum count, return
-                if count == 7:
+                if count == 50:
                     return
                 #print("count 2: ", count)
                 crawl(count, que, file)
                 #print("count 3: ", count)
                 # If we have reached our maximum count, return
-                if count == 7:
+                if count == 50:
                     return
     return
 
@@ -62,7 +62,7 @@ def is_visible(element):
 
 def scrape(urls):
     #print(os.listdir())
-    os.chdir("dem_urls")
+    os.chdir("rep_urls")
     #print(os.listdir())
     for cur_url in urls:
         # Creates the text file name for each url
@@ -111,13 +111,13 @@ if __name__ == '__main__':
     count = 0
 
     # Add our starting URLS to the queue
-    que.append('https://www.cnn.com/europe/live-news/russia-ukraine-war-news-10-09-22/index.html')
+    que.append('https://www.fox13now.com/news/national-news/russia-ukraine-conflict')
 
 
 
 
-    with open('dem_urls.txt', 'w') as file:
-        file.write('https://www.cnn.com/europe/live-news/russia-ukraine-war-news-10-09-22/index.html' + '\n')
+    with open('rep_urls.txt', 'w') as file:
+        file.write('https://www.fox13now.com/news/national-news/russia-ukraine-conflict' + '\n')
 
 
 
@@ -128,7 +128,7 @@ if __name__ == '__main__':
     unique_urls_found = set()
 
     # Read in the file of urls and save only the unique ones (it will likely have many repeats)
-    with open('dem_urls.txt', 'r') as file:
+    with open('rep_urls.txt', 'r') as file:
         urls_found = file.read().splitlines()
 
     # Close the file
