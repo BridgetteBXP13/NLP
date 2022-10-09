@@ -11,7 +11,7 @@ import math
 from nltk import word_tokenize
 from nltk import ngrams
 
-def calc_prob(text, unigram_dict, bigram_dict, NUM_TOKENS, VOCAB_SIZE):
+def calc_prob(text, unigram_dict, bigram_dict, VOCAB_SIZE):
 
     unigrams_test = word_tokenize(text)
     bigrams_test = list(ngrams(unigrams_test, 2))
