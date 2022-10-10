@@ -98,7 +98,7 @@ if __name__ == '__main__':
     tfidf_rep = sorted(tfidf_rep.items(), key=lambda x: x[1], reverse=True)
     print('\nFrom FOX (right-leaning):\n', tfidf_rep[:30])
     tfidf_int = sorted(tfidf_int.items(), key=lambda x: x[1], reverse=True)
-    print('\nFrom Wall Street Journal (neutral):\n', tfidf_int[:30])
+    print('\nFrom BBC Journal (international):\n', tfidf_int[:30])
 
     # top 10 terms
     top_10 = ['ukraine', 'russia', 'nuclear', 'forces', 'military',
