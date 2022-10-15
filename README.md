@@ -152,4 +152,5 @@ With our terms we then created a knowledge based utilizing our dictionaries by e
 ## Assignment 7: Syntax Parsing
 In [this] assignment I simply utilized PSG, Dependency, and SRL parsing to parse the sentence:
 > A lot of people are afraid of snakes because they do not understand them.
+
 I also write a comparison summary of the different types of parsing.
