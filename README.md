@@ -148,3 +148,8 @@ Finally we created a program which will take the processed text from the URLs fo
     - Moscow
     - Kherson
 With our terms we then created a knowledge based utilizing our dictionaries by extracting the sentences containing our key terms. After it simply just pickles the knowledge base.
+
+## Assignment 7: Syntax Parsing
+In [this] assignment I simply utilized PSG, Dependency, and SRL parsing to parse the sentence:
+> A lot of people are afraid of snakes because they do not understand them.
+I also write a comparison summary of the different types of parsing.
