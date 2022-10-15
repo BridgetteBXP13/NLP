@@ -125,3 +125,26 @@ The first [program](Assignment5/ngrams_create_dictionaries.py) creates unigram a
 
 ### ngrams_probabilities.py
 The second [program](Assignment5/ngrams_probabilities.py) unpickles the language unigram and bigram dictionaries created in the first program above. It also takes the [test input file](Assignment5/LangId.test) and the [test solution file](Assignment5/LangId.sol) to make predictions on. First it sets the number of tokens and vocabulary for each language, it gets the number of vocabulary terms by getting the length of the unigram dictionary for each language. It gets the number of tokens by getting a sum of the unigram dictionary keys (the count of each unigram) for each language. Then it will open the test file and create the prediction file, this will be formatted exactly the same as the solution file in order to compare them for evaluation later. For each line in the test file it will use the calc_prob function to predict the probability of each language based on their dictionaries using LaPlace probabilties. It takes the highest of the language probabilities and writes the line number and predicted languages name to the line of the [predict](Assignment5/LangId.predict) file. After finishing this for all lines of the test file, it will close both files. Then it will reopen the predict file (as a read in this time) and solution file. It will compare each line of both keeping of a sum of both the total number of lines and the number of lines correctly predicted. It will also keep track of the incorrect line numbers. After, it will print the calculated accuracy (correct predicted lines divided by the total number of lines, multiplied by 100 to show a percentage). It will then print the Incorrect line numbers.
+
+## Assignment 6: Webcrawler
+I worked with [Tera Parish](https://github.com/tparish714) on creating three programs. Our two programs combined can build 3 knowledge bases for the Ukraine and Russia war based on International, Democratic, and Republican news sites. [Here](Assignment6/Russia%20and%20Ukraine%20War%20Knowledge%20Base.pdf) is our overview of our created knowledge bases and programs. 
+
+### webcrawler.py
+We created three webcrawlers, one for [international news sites](Assignment6/int_webcrawler.py), one for [democratic news sites](Assignment6/dem_webcrawler.py), and one for [republican news sites](Assignment6/rep_webscrawler.py). Each crawler has the same code but has adjustments for the recusive count, and the changes for the urls.txt files/folders names. They each have different starting URLs which causes them to be international, democratic, or republican based files. After crawling through all the URLs, it will list all the unique URLs (no duplicates) into text files for [international news sites](Assignment6/int_urls.txt), [democratic news sites](Assignment6/dem_urls.txt), and [republican news sites](Assignment6/rep_urls.txt). Then it will scrape each unique url listed into it's own text file to be processed into folders for the [international news sites](Assignment6/int_urls/), [democratic news sites](Assignment6/dem_urls/), and [republican news sites](Assignment6/rep_urls/).
+
+### processing_text.py
+We created a program which will take the folders with the listed unique URLs, then it will read through each text file for each URL and process each text. It will save the processed text into folders for the [international news sites](Assignment6/int_urls_out/), [democratic news sites](Assignment6/dem_urls_out/), and [republican news sites](Assignment6/rep_urls_out/) in their seperate URL text file.
+
+### extract_sents.py
+Finally we created a program which will take the processed text from the URLs folders and creates three dictionaries using term frequency and term frequency - inverse document frequency (tf and tf-idf). Then we chose the top ten terms:
+    - Ukraine
+    - Russia
+    - Nuclear
+    - Forces
+    - Military
+    - Troops
+    - Territory
+    - Zelensky
+    - Moscow
+    - Kherson
+With our terms we then created a knowledge based utilizing our dictionaries by extracting the sentences containing our key terms. After it simply just pickles the knowledge base.
