@@ -302,6 +302,7 @@ def predict_category(input):
 
 # Returns the response given the category
 def get_response(category):
+    global covered_cats
     response = ""
     # creates a string and returns it for each category
     if len(covered_cats) >= 42:
@@ -321,6 +322,8 @@ def get_response(category):
         response = "All snakes have different personalities and habits. They are unique just as any other animal. While they may express these things very differently, if you interact with different snakes you can notice these diffences.<br><br>There are also recent studies where scientists have found that snakes appear to be more intelligent than we first thought. Although it is difficult to test their intelligence.<br><br>It is good to recognize how unique and different these creatures are. Including that they don't have as complex feelings and memory as we do. So pet snakes don't love their owners but can express affection."
     elif category == 'Bye':
         response = "Goodbye"
+        # Reset our categories!
+        covered_cats = []
     elif category == 'Creators':
         response = "I was created by Bridgette Bryant and Tera Parish"
     elif category == 'Crossbreeding':
