@@ -132,3 +132,12 @@ I also write a comparison summary of the different types of parsing.
 ## Author Attribution
 
 In this [notebook](Author%20Attribution/author_attribution.ipynb) I will predict the author of a given text from [federalist.csv](Author%20Attribution/federalist.csv). It is a csv file of text and it’s given author whom can be Hamilton, Jay, or Madison. Sometimes a mixture of the authors as well. I will utlize pandas for the data processing, NLP for the word processing, and then sklearn to perform Bernoulli Naive Bayes, Logistic Regression, and Neural Network. There is also an easy to read [pdf](Author%20Attribution/author_attribution.pdf) version. I created the notebook and pdf using Jupyter-Lab.
+
+
+## ACL Paper
+
+I collaborated with [Tera Parish](https://github.com/tparish714) to write [this](ACL_Paper_Summary.pdf) paper. It's an overview of [this](https://aclanthology.org/2021.acl-long.170/) ACL paper. An overview of the paper was about how much research we put into algorithms and models but not the training data for DL. The data is very important as with biased or discrimatory data it can directly impact the models and therefore potentially harm the users. It highlights how much thought we need to put into our process of creating models and reviewing data.
+
+## Chatbot
+
+I collaborated with [Tera Parish](https://github.com/tparish714) and we created a Chatbot which debates and debunks common snake myths and misconcenptions. The overall report can be found [here](Chatbot/SnakeDebatChatbot_Report.pdf). Although it is in it's own [Github Repo](https://github.com/BridgetteBXP13/Snake-Debate-Bot). Which also contains the many notebooks I utilized while testing models. It is written in Python and utilizes Tensorflow with a finetuned [Distilbert model](https://huggingface.co/distilbert-base-uncased?text=The+goal+of+life+is+%5BMASK%5D). It was very difficult creating a successful model because our dataset was handwritten and only had about 330 observations but 51 different classes. Each class represented a snake fact/myth/topic. They all have a unique handwritten response to ensure the chatbot doesn't create unintended information or possibly spread misinformation. It also avoids storing any user data except their responses (which it gives a clear disclaimer for). The chatbot itself is also a flask app and opens nicely in your browser and is very easy to use. However, if you wish to pass it to a new user it is best to say 'Goodbye' so it clears the categories and starts fresh!
