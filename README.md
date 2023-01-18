@@ -19,7 +19,8 @@ including simple file/data processing.
 Without the directory/file above the program will simply give you an error message telling you that you are missing the parameters!
 
 This program takes a data.csv file as described above in the form:
-Last,First,Middle Initial,ID,Office phone
+
+Last,First,MiddleInitial,ID,OfficePhone
 Smith,Smitty,S,WH1234,5557771212
 ...
 
