@@ -12,9 +12,9 @@ Created for Assignment 1 of 4395.001 Human Language Technologies in order to fam
 including simple file/data processing.
 
 ### REQUIRED PARAMETERS:    
-                        You must have a folder in the same directory
-                        name 'data' containing a file named 'data.csv'
-                        it can be found [here](https://bridgettebxp13.github.io/CS-4395.001---Human-Language-Technologies/) under Text Processing With Python, or [here](https://github.com/BridgetteBXP13/CS-4395.001---Human-Language-Technologies/) at this github in Text Processing With Python.
+  You must have a folder in the same directory
+  name 'data' containing a file named 'data.csv'
+  it can be found [here](https://bridgettebxp13.github.io/NLP/) under Text Processing   With Python, or [here](https://github.com/BridgetteBXP13/NLP/) at this github in  Text Processing With Python.
                         
 Without the directory/file above the program will simply give you an error message telling you that you are missing the parameters!
 
@@ -37,12 +37,11 @@ Some of the benefits of using Python for text processing is the simplicity of no
 It is coded in [python](Word%20Guessing%20Game/word_guessing_game.py) with the [data](Word%20Guessing%20Game/data/anat19.txt)
 
 ### REQUIRED PARAMETERS:
-    You must have a folder in the same directory named 'data' containing the
-    text data file named 'anat19.txt' it can be found above with the 'data' link.
+   You must have a folder in the same directory named 'data' containing the
+   text data file named 'anat19.txt' it can be found above with the 'data' link.
 
-    or here as this github in Word Guessing Game:
-
-    https://gihub.com/BridgetteBXP13/CS-4395.001---Human-Language-Techologies
+   or [here](https://gihub.com/BridgetteBXP13/NLP) as this github in Word Guessing Game.
+   
 Without the directory/file above the program will simply display an error message
 telling you that your are missing the parameters and quit.
 
@@ -70,22 +69,22 @@ also thank the user for playing.
 ### Functions:
 
 #### readdatafile:
-    This function reads in the parameter data file from the file directory, works with different OS systems. It is utilized by main to read the program's given parameters.
+   This function reads in the parameter data file from the file directory, works with different OS systems. It is utilized by main to read the program's given parameters.
 
 #### printnumtags:
-    This function takes a list of tags and a number, it will print the first num of tags in the list. It is utilized by processrawtext to print 20 tags.
+   This function takes a list of tags and a number, it will print the first num of tags in the list. It is utilized by processrawtext to print 20 tags.
 
 #### processrawtext:
-    This function processes our raw text into text_tokens and unique noun lemmas and returns them. It is utilized by main to process the input from the anat19.txt file.
+   This function processes our raw text into text_tokens and unique noun lemmas and returns them. It is utilized by main to process the input from the anat19.txt file.
 
 #### chooseword:
-    This function takes a list of nouns, and randomly chooses a noun. Then removes such noun from the list. After it returns the chosen noun and the updated noun list. It is utilized by guessinggame.
+   This function takes a list of nouns, and randomly chooses a noun. Then removes such noun from the list. After it returns the chosen noun and the updated noun list. It is utilized by guessinggame.
 
 #### guessinggame:
-    This function runs the guessing game part of this program. It requires a list of nouns. First it will print rules and how to play to the user. Then it will continue to give the user words to guess (designated by underscores). The user will be prompted to guess a letter, if not given a letter it will continue to ask them to guess again. If the user inputs a letter it will assign appropriate letters to the word and add/subtract the appropriate amount of points according to the rules/how to play. If the user manages to guess all the words the game ends and the user will be congratulated as a guessing master. If the user quits by entering a '!' the function  will print the end sequence and thank them for playing. The end sequence for both is displaying the ending number of points, number of guessed words, and the guessed words. The program will then return to main.
+   This function runs the guessing game part of this program. It requires a list of nouns. First it will print rules and how to play to the user. Then it will continue to give the user words to guess (designated by underscores). The user will be prompted to guess a letter, if not given a letter it will continue to ask them to guess again. If the user inputs a letter it will assign appropriate letters to the word and add/subtract the appropriate amount of points according to the rules/how to play. If the user manages to guess all the words the game ends and the user will be congratulated as a guessing master. If the user quits by entering a '!' the function  will print the end sequence and thank them for playing. The end sequence for both is displaying the ending number of points, number of guessed words, and the guessed words. The program will then return to main.
     
 #### main:
-    Verifies that the parameter data file anat19.txt is present (using readdatafile). Then it will use the processrawdata function to process the given raw text. Then it will calculate/print the lexical diversity of the return tokens/lemmas from processrawdata. After it will create a dictionary of the unique lemmas and sort them by their count. Next it prints and saves the first 50 nouns to a list. Finally it calls the guessinggame function to start the game with the given list of nouns.
+   Verifies that the parameter data file anat19.txt is present (using readdatafile). Then it will use the processrawdata function to process the given raw text. Then it will calculate/print the lexical diversity of the return tokens/lemmas from processrawdata. After it will create a dictionary of the unique lemmas and sort them by their count. Next it prints and saves the first 50 nouns to a list. Finally it calls the guessinggame function to start the game with the given list of nouns.
 
 
 ## WordNet
